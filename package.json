@@ -9,7 +9,7 @@
     "/schemas"
   ],
   "scripts": {
-    "test": "jest --colors",
+    "test": "yarn build && jest --colors",
     "build": "yarn tsc --build --verbose",
     "clean": "rm -rf build",
     "compare": "yarn ts-node src/index.ts compare",
